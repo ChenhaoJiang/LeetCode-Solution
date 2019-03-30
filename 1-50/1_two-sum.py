@@ -3,7 +3,7 @@
 你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
 Ex:
 input: nums = [2, 7, 11, 15], target = 9
-return: [0, 1]
+output: [0,1]
 """
 
 
@@ -24,8 +24,6 @@ class Solution(object):
                 return [map[another_num],index]
             map[num]=index
         return None
-
-	"""
-	My thinking:采用字典的做法，将nums数组中的数和对应的下标存入字典中
-	"""
-		
+"""
+My thinking:采用字典的做法，将nums数组中的数和对应的下标存入字典中
+"""
