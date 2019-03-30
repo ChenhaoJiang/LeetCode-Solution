@@ -1,2 +1,2 @@
 # LeetCode-Solution
- My solution in Python for the problem of LeetCode
+Here is my solution in Python for the problem of LeetCode for yout reference. Please correct it if there is any mistake. Thanks sincerely.
