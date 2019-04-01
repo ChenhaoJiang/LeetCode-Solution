@@ -46,5 +46,7 @@ class Solution(object):
         else:
             return False
 """
-My thinking: Use a stack to store open brackets.When we encounter a closing bracket, then check the element on top of the stack. If the element at the top of the stack is an opening bracket of the same type, then pop it off the stack. Else, this implies an invalid expression. In the end, if we are left with a stack still having elements, then this implies an invalid expression.
+My thinking: Use a stack to store open brackets.When we encounter a closing bracket, then check the element on top of the stack. If the 
+element at the top of the stack is an opening bracket of the same type, then pop it off the stack. Else, this implies an invalid 
+expression. In the end, if we are left with a stack still having elements, then this implies an invalid expression.
 """
