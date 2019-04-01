@@ -41,5 +41,7 @@ class Solution(object):
             
         return output
 """
-My thinking: First step, find the longest identical string. Then, on the basis of the first step, compare whether the characters on both sides are equal. At last, compare the length of the longest palindromic substring found by the current loop to the global variable 'max_len'.
+My thinking: First step, find the longest identical string. Then, on the basis of the first step, compare whether the characters on both
+sides are equal. At last, compare the length of the longest palindromic substring found by the current loop to the global variable 
+'max_len'.
 """
