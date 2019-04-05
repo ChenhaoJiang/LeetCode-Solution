@@ -19,7 +19,7 @@ class Solution:
         #My code starts here
         res = self.pow(x, abs(n))
         if n < 0:
-            res = 1.0 / res  #When n<0
+            res = 1.0 / res  #When n<0, pow(x,n)=1/pow(x,abs(n)).
         return res
     
     def pow(self, x, n):
