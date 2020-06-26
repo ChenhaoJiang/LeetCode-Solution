@@ -17,7 +17,6 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        """
         return get(nums,0,len(nums)-1)['msum']
 """
 思路：分治法，维护四个量（见注释），区间长度为1时结束递归。但事实上DP时间复杂度为O(n)，而分治法时间复杂度为O(nlogn)。精妙是精妙，但架不住代码长，复杂度高啊。
