@@ -1,6 +1,6 @@
 """
-Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word (last word means the last appearing word if 
-we loop from left to right) in the string.
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word (last word means the last appearing word 
+if we loop from left to right) in the string.
 If the last word does not exist, return 0.
 Note: A word is defined as a maximal substring consisting of non-space characters only.
 Example:
@@ -34,6 +34,6 @@ class Solution(object):
         s = s.split()
         return len(s[-1]) if s else 0
 """
-思路：第一种解法是顺序遍历字符串的方法，唯一需要特殊处理的地方就是可能会存在最后以空格为结尾的情况，因此引入一个flag进行判断。第二种解法直接用了python内置的split()函数，对字符串进行按空格分割，
-并返回最后一个词的长度即可。评论里也看到一种做法，用strip()函数去除字符串末尾的空格，再用普通做法做。既然都用了strip()了，为什么不直接split()呢？
+思路：第一种解法是顺序遍历字符串的方法，唯一需要特殊处理的地方就是可能会存在最后以空格为结尾的情况，因此引入一个flag进行判断。第二种解法直接用了python内置的split()函数，对字符串进行按空格分
+割，并返回最后一个词的长度即可。评论里也看到一种做法，用strip()函数去除字符串末尾的空格，再用普通做法做。既然都用了strip()了，为什么不直接split()呢？
 """
