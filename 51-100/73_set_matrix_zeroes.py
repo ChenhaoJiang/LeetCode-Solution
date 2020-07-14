@@ -1,4 +1,4 @@
-'''
+"""
 Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in-place.
 Example 1:
 Input: 
@@ -30,7 +30,7 @@ Follow up:
 A straight forward solution using O(mn) space is probably a bad idea.
 A simple improvement uses O(m + n) space, but still not the best solution.
 Could you devise a constant space solution?
-'''
+"""
 
 class Solution(object):
     def setZeroes(self, matrix):
@@ -76,7 +76,7 @@ class Solution(object):
         if columnFlag:
             for i in range(m):
                 matrix[i][0] = 0
-  '''
+  """
   思路：如果说利用一个额外的m*n矩阵来储存这个位置是否要置0，时间上肯定要快很多，但是空间复杂度为O(mn)。当然也可以用一个m维向量和n维向量分别储存每一行和每一列是否要置0，这样空间复杂度为
   O(m+n)。由于题目要求是希望以空间为主，空间复杂度希望为O(1)，并且要在原矩阵上直接修改，因此本题只能用这种方法来做。
-  '''
+  """
