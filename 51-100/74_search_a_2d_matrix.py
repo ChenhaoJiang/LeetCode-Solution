@@ -1,4 +1,4 @@
-'''
+"""
 Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
 Integers in each row are sorted from left to right.
 The first integer of each row is greater than the last integer of the previous row.
@@ -20,7 +20,7 @@ matrix = [
 ]
 target = 13
 Output: false
-'''
+"""
 
 class Solution(object):
     def searchMatrix(self, matrix, target):
@@ -61,7 +61,7 @@ class Solution(object):
                 left = mid + 1
         return False
         
-        '''
+        """
         ### 解法二 ###
         # 直接对m*n个元素二分查找
         left, right = 0, m * n - 1
@@ -77,7 +77,7 @@ class Solution(object):
                     else:
                         left = mid_idx + 1
         return False
-        '''
-  '''
+        """
+  """
   思路：两种解法总体上来说都是利用二分查找，因此时间复杂度均为O(log(mn))，空间复杂度均为O(1)。
-  '''
+  """
