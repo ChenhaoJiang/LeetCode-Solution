@@ -36,7 +36,7 @@ class Solution(object):
             if not left and not right:
                 return True
             # 或者两个结点中有一个为空
-			      # 或者两个结点的值不相等
+	    # 或者两个结点的值不相等
             elif not left or not right or left.val != right.val:
                 return False
             # 否则则将左半边树的左结点与右半边树的右结点进行比较，将左半边树的右结点与右半边树的左结点进行比较
